@@ -1,0 +1,519 @@
+/* FOnt type */
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=BBH+Sans+Hegarty&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --main-color: #ffe052;
+}
+
+/*  */
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-primary {
+    color: #fff;
+    border: 1px solid #fff;
+    transition: 0.3s;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #383848;
+    transition: 0.3s;
+    margin-top: 2rem;
+}
+
+.btn-secondary:hover {
+    background-color: var(--main-color);
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.btn-primary:hover {
+    background-color: var(--main-color);
+}
+
+.primary-text {
+    color: var(--main-color);
+}
+
+/*  d */
+
+/* Header Start */
+header {
+    height: 100vh;
+    background-image: url(../img/home_bg.jpeg);
+    background-size: cover;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+header * {
+    z-index: 5;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 7rem;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+#navbar ul li {
+    /* margin: 0 20px; */
+    text-transform: capitalize;
+}
+
+#navbar ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 20px;
+}
+
+#navbar ul li a:hover {
+    /* color: #000; */
+    border-bottom: 2px solid #e4b95b;
+}
+
+#navbar img {
+    width: 80px;
+    transition: .3s;
+}
+
+#navbar img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(75vh);
+}
+
+header .content h1 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+header .content h1 span {
+    color: var(--main-color);
+}
+
+header .content p {
+    color: #fff;
+    margin: 20px 0 40px;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+header .content a {
+    text-decoration: none;
+
+}
+
+/* Header Start */
+/* About Start */
+#about {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+#about .title {
+    text-align: center;
+    margin-bottom: 4rem;
+    text-transform: capitalize;
+}
+
+#about .title h2,
+#galary h2,
+#menu .title h2,
+#offers .title h2 {
+    font-size: 40px;
+    color: #383848;
+    margin-bottom: 20px;
+}
+
+#about .title p {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+
+#about .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about .content img {
+    width: 430px;
+}
+
+#about .content p {
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* About End */
+/* offers start */
+#offers {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/offer-background.jpg) center center/cover fixed;
+}
+
+#offers .title {
+    text-align: center;
+    margin-bottom: 4rem;
+    text-transform: capitalize;
+}
+
+#offers .title h2 {
+
+    color: var(--main-color);
+
+}
+
+#offers .title p {
+    font-size: 14px;
+    color: #ffff;
+    font-weight: 600;
+}
+
+#offers img {
+    width: 180px;
+    transition: all .3s;
+}
+
+#offers img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#offers .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#offers .row .col {
+    text-align: center;
+}
+
+#offers .row .col h3 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 15px 0;
+    text-transform: capitalize;
+}
+
+#offers .row .col p {
+    color: #f4f4f4;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 300;
+    padding: 0 25px;
+    margin-bottom: 15px;
+}
+
+#offers .row .col p span {
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+/* offers end */
+
+/* MENU START */
+#menu {
+    padding: 5rem 0;
+    background-color: #f4f4f4;
+}
+
+#menu .title {
+    text-align: center;
+    margin-bottom: 4rem;
+    text-transform: capitalize;
+}
+
+#menu .title h2 {
+    color: #383848;
+    font-weight: 600;
+}
+
+#menu .title p {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+
+#menu .menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu .menu-items img {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: .3s;
+}
+
+#menu .menu-items img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#menu .menu-items .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+#menu .menu-items .item h3 {
+    color: #383848;
+    border-bottom: 1px dashed #c2bdbd;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#menu .menu-items .item h3 span {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#menu button {
+    display: block;
+    margin: 20px auto 0;
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#menu button:hover {
+    background-color: #383848;
+}
+
+/* MENU end */
+/* Datytimes start */
+#daytime {
+
+    background: url(../img/daytime_bg.jpeg) center center/cover fixed;
+}
+
+#daytime .icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    height: 40vh;
+}
+
+#daytime .icons .icon {
+    margin: 0 50px;
+}
+
+#daytime .icons .icon img {
+    transition: 0.3s;
+}
+
+#daytime .icons .icon img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#daytime .icons .icon h3 {
+    font-size: 32px;
+    margin: 20px 0 10px;
+    color: #f4f4f4;
+    font-weight: 600;
+}
+
+#daytime .icons .icon p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Datytimes end */
+/* galary start */
+#galary {
+    background: url(../img/offer-background.jpg) center center / cover no-repeat;
+    padding: 8rem 0 6rem;
+}
+
+#galary h2 {
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+#galary .galary-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#galary .galary-items img {
+    width: 280px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+#galary .galary-items img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* galary end */
+/* contact start */
+#contact {
+    padding: 5rem 0;
+    background-color: #f4f4f4;
+    text-transform: capitalize;
+}
+
+#contact .container {
+    max-width: 900px;
+}
+
+#contact .content-contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact .content-contact .contact-info {
+    width: 50%;
+
+}
+
+#contact .content-contact .contact-info div {
+    margin: 30px 0;
+    line-height: 170%;
+}
+
+#contact .content-contact .contact-info div h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #383848;
+}
+
+#contact .content-contact .contact-info .address i {
+    color: var(--main-color);
+    /* margin-right: 5px; */
+}
+
+#contact .content-contact .contact-info div p {
+    color: #9a9a9a;
+}
+
+#contact .content-contact .contact-info .follow a i {
+    color: #383848;
+    font-size: 30px;
+    transition: 0.3s;
+}
+#contact .content-contact .contact-info .follow a i:hover
+{
+    color: var(--main-color);
+}
+#contact .content-contact form
+{
+width: 50%;
+}
+form input , textarea
+{
+    width: 100%;
+    display: block;
+    padding: 20px 15px ;
+    margin: 20px 0;
+    border: none;
+    background-color: #e3e2dd;
+}
+form .btn 
+{
+    background-color: var(--main-color);
+    color: #f4f4f4;
+    transition: 0.3s;
+}
+form .btn:hover
+{
+    background-color: #383848;
+    cursor: pointer;
+}
+/* contact end */
+ /* footer start */
+
+#footer
+{
+    background-color: #383848;
+    color: #e3e2dd;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+ /* footer end */
