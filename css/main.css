@@ -87,12 +87,12 @@ header * {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 7rem;
 }
 
 #navbar ul {
     list-style-type: none;
     display: flex;
+    margin-right: 100px;
 
 }
 
@@ -116,6 +116,7 @@ header * {
 
 #navbar img {
     width: 80px;
+    margin-left: 100px;
     transition: .3s;
 }
 
@@ -194,7 +195,7 @@ header .content a {
 }
 
 #about .content img {
-    width: 430px;
+    max-width: 430px;
 }
 
 #about .content p {
