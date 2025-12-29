@@ -7,10 +7,11 @@
     margin: 0;
     padding: 0;
 }
-html
-{
+
+html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -281,7 +282,7 @@ header .content a {
 
 /* MENU START */
 #menu {
-    padding: 5rem 0;
+    padding: 3rem 0;
     background-color: #f4f4f4;
 }
 
@@ -302,6 +303,23 @@ header .content a {
     font-weight: 600;
 }
 
+#menu .title .menu-buttom {
+margin: 2rem 0;
+}
+#menu .title .menu-buttom .filter-btn {
+    padding: 10px 20px;
+    background-color: #383848;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+#menu .title .menu-buttom .filter-btn:hover{
+    background-color:var(--main-color);
+}
 #menu .menu-items {
     display: flex;
     justify-content: center;
@@ -341,18 +359,6 @@ header .content a {
     right: 0;
 }
 
-#menu button {
-    display: block;
-    margin: 20px auto 0;
-    background-color: var(--main-color);
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#menu button:hover {
-    background-color: #383848;
-}
 
 /* MENU end */
 /* Datytimes start */
@@ -478,46 +484,48 @@ header .content a {
     font-size: 30px;
     transition: 0.3s;
 }
-#contact .content-contact .contact-info .follow a i:hover
-{
+
+#contact .content-contact .contact-info .follow a i:hover {
     color: var(--main-color);
 }
-#contact .content-contact form
-{
-width: 50%;
+
+#contact .content-contact form {
+    width: 50%;
 }
-form input , textarea
-{
+
+form input,
+textarea {
     width: 100%;
     display: block;
-    padding: 20px 15px ;
+    padding: 20px 15px;
     margin: 20px 0;
     border: none;
     background-color: #e3e2dd;
 }
-form .btn 
-{
+
+form .btn {
     background-color: var(--main-color);
     color: #f4f4f4;
     transition: 0.3s;
 }
-form .btn:hover
-{
+
+form .btn:hover {
     background-color: #383848;
     cursor: pointer;
 }
-/* contact end */
- /* footer start */
 
-#footer
-{
+/* contact end */
+/* footer start */
+
+#footer {
     background-color: #383848;
     color: #e3e2dd;
     text-align: center;
     padding: 10px 0;
     font-size: 14px;
 }
- /* footer end */
+
+/* footer end */
 .scroll-to-top {
     position: fixed;
     bottom: 30px;
@@ -531,6 +539,7 @@ form .btn:hover
     z-index: 1000;
     transition: 0.3s;
 }
+
 .scroll-to-top:hover {
     background-color: #383848;
     cursor: pointer;

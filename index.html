@@ -102,17 +102,23 @@
             <div class="title">
                 <h2>our special menu</h2>
                 <p>order two and get third for free</p>
+                <div class="menu-buttom">
+                    <button class="filter-btn" data-category="all">All</button>
+                    <button class="filter-btn" data-category="breakfast">Breakfast</button>
+                    <button class="filter-btn" data-category="lunch">Lunch</button>
+                    <button class="filter-btn" data-category="dinner">Dinner</button>
+                </div>
             </div>
             <div class="menu-items">
                 <div class="menu-item-left">
-                    <div class="item">
+                    <div class="item" data-category="breakfast">
                         <img src="img/food1.png" alt="food 1">
                         <div>
                             <h3>LASAL CHEESS <span class="primary-text"> $18.00</span class="primary-text"></h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, libero?</p>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-category="lunch">
                         <img src="img/food2.png" alt="food 2">
                         <div>
                             <h3>JUMPO CRAB SHRIMP <span class="primary-text"> $18.00</span class="primary-text"></h3>
@@ -120,14 +126,14 @@
 
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-category="breakfast" data-category="dinner">
                         <img src="img/food3.png" alt="food 3">
                         <div>
                             <h3>KOKTAIL JUCIE <span class="primary-text"> $18.00</span class="primary-text"></h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, libero?</p>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-category="lunch">
                         <img src="img/food4.png" alt="food 4">
                         <div>
                             <h3>CAMPO STEAK <span class="primary-text"> $18.00</span class="primary-text"></h3>
@@ -135,7 +141,7 @@
 
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-category="breakfast">
                         <img src="img/food5.png" alt="food 5">
                         <div>
                             <h3>ORGANIC FRUIT SALAD <span class="primary-text"> $18.00</span class="primary-text"></h3>
@@ -143,7 +149,7 @@
 
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-category="lunch">
                         <img src="img/food6.png" alt="food 6">
                         <div>
                             <h3>VEGETABLES PIZAA <span class="primary-text"> $18.00</span class="primary-text"></h3>
@@ -153,7 +159,7 @@
                     </div>
                 </div>
                 <div class="menu-item-right">
-                    <div class="item">
+                    <div class="item" data-category="dinner">
                         <img src="img/food7.jpeg" alt="food 7">
                         <div>
                             <h3>KOFTA MEAT <span class="primary-text"> $18.00</span class="primary-text"></h3>
@@ -161,7 +167,7 @@
 
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-category="breakfast">
                         <img src="img/food8.jpeg" alt="food 8">
                         <div>
                             <h3>SPANISH PIES <span class="primary-text"> $18.00</span class="primary-text"></h3>
@@ -169,7 +175,7 @@
 
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-category="breakfast">
                         <img src="img/food9.jpeg" alt="food 9">
                         <div>
                             <h3>CHEESS TOST <span class="primary-text"> $18.00</span class="primary-text"></h3>
@@ -177,21 +183,21 @@
 
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-category="breakfast">
                         <img src="img/food10.jpeg" alt="food 10">
                         <div>
                             <h3>FRUIT SALAD <span class="primary-text"> $18.00</span class="primary-text"></h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, libero?</p>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-category="dinner">
                         <img src="img/food11.jpeg" alt="food 11">
                         <div>
                             <h3>CHICKEN SHAWAERMA <span class="primary-text"> $18.00</span class="primary-text"></h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, libero?</p>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-category="lunch">
                         <img src="img/food12.jpeg" alt="food 12">
                         <div>
                             <h3>MEAT PIZZA <span class="primary-text"> $18.00</span class="primary-text"></h3>
@@ -201,7 +207,6 @@
                 </div>
             </div>
         </div>
-        <button class="btn"> EXPLORE FULL MENU</button>
     </section>
 
     <!-- Menu section end -->
@@ -298,6 +303,7 @@
     <!-- footer end -->
     <a class="scroll-to-top" href="#top"><i class="fa-solid fa-arrow-up"></i></a>
 
+    <script src="main.js"></script>
 </body>
 
 </html>
