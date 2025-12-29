@@ -88,6 +88,11 @@ header * {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+}
+#navbar .humberger {
+    display: none;
+    cursor: pointer;
 }
 
 #navbar ul {
@@ -127,7 +132,7 @@ header * {
 }
 
 
-header .content {
+header #content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -135,17 +140,17 @@ header .content {
     height: calc(75vh);
 }
 
-header .content h1 {
+header #content h1 {
     color: #fff;
     text-transform: capitalize;
     font-size: 40px;
 }
 
-header .content h1 span {
+header #content h1 span {
     color: var(--main-color);
 }
 
-header .content p {
+header #content p {
     color: #fff;
     margin: 20px 0 40px;
     font-weight: 300;
@@ -153,7 +158,7 @@ header .content p {
     text-transform: capitalize;
 }
 
-header .content a {
+header #content a {
     text-decoration: none;
 
 }

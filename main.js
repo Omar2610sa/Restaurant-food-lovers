@@ -1,3 +1,23 @@
+// Humberger Menu 
+const nabBar = document.querySelector("#ul-item")
+const hum = document.querySelector(".humberger")
+const bars = document.querySelector(".fa-bars")
+const Xbar = document.querySelector(".fa-x")
+
+hum.addEventListener("click", ()=>{
+    nabBar.classList.toggle("active")
+    bars.classList.toggle("active")
+    Xbar.classList.toggle("active")
+})
+
+document.querySelectorAll("#ul-item li a").forEach(link => {
+    link.addEventListener("click", () => {
+        nabBar.classList.remove("active");
+        bars.classList.toggle("active");
+        Xbar.classList.toggle("active");
+    });
+});
+
 const filterButton = document.querySelectorAll(".filter-btn")
 
 const menuItems = document.querySelectorAll(".item")

@@ -10,7 +10,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Media qurey -->
     <link rel="stylesheet" href="css/meida.css">
 </head>
@@ -20,8 +20,12 @@
     <header>
         <div id="navbar">
             <img src="img/logo.png" alt="Logo">
-            <ul>
-                <li><a href="#home">home</a></li>
+            <div class="humberger">
+                <i class="fa-solid fa-bars active"></i>
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <ul id="ul-item">
+                <li><a href="#content">home</a></li>
                 <li><a href="#about">about</a></li>
                 <li><a href="#offers">offers</a></li>
                 <li><a href="#menu">menu</a></li>
@@ -29,7 +33,7 @@
                 <li><a href="#contact">contact</a></li>
             </ul>
         </div>
-        <div class="content">
+        <div id="content">
             <h1>Welcome to <span class="primary-text">food lovers</span class="primary-text"> restaurant</h1>
             <p>here you can find the most delaicies food in the world</p>
             <a class="btn btn-primary" href="#">book a table</a>
