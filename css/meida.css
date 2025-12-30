@@ -99,7 +99,8 @@
         flex-direction: column;
         background-color: #1f1f28;
         transition: 0.3s all ease;
-        text-align: center;
+        text-align: center
+        ;
         visibility: hidden;
     }
 
