@@ -67,7 +67,7 @@ a {
 /* Header Start */
 header {
     height: 100vh;
-    background-image: url(../img/home_bg.jpeg);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Ds4ir0Dbut36cpp0sAFrD6sOaAZ15uHIzw&s);
     background-size: cover;
     position: relative;
 }
@@ -498,20 +498,34 @@ margin: 2rem 0;
     width: 50%;
 }
 
-form input,
-textarea {
+form .form-control input,
+.form-control textarea {
     width: 100%;
     display: block;
     padding: 20px 15px;
-    margin: 20px 0;
     border: none;
+    margin: 15px 0;
     background-color: #e3e2dd;
+}
+/* Error Case */
+form .form-control.error input,
+.form-control.error textarea{
+    border:1px solid red;
+}
+form .form-control span {
+    color: red;
+    font-size: 12px;
+    visibility: hidden;
+}
+form .form-control.error span {
+    visibility: visible;
 }
 
 form .btn {
     background-color: var(--main-color);
     color: #f4f4f4;
     transition: 0.3s;
+    margin: 10px 0;
 }
 
 form .btn:hover {
@@ -543,8 +557,12 @@ form .btn:hover {
     /* display: none; */
     z-index: 1000;
     transition: 0.3s;
+    opacity: 0;
 }
-
+.scroll-to-top.show 
+{
+    opacity: 1;
+}
 .scroll-to-top:hover {
     background-color: #383848;
     cursor: pointer;

@@ -99,15 +99,16 @@
         flex-direction: column;
         background-color: #1f1f28;
         transition: 0.3s all ease;
-        opacity: 0;
+        text-align: center;
+        visibility: hidden;
     }
 
     #navbar ul.active {
-        opacity: 1;
+        visibility: visible;
     }
 
     #navbar ul li {
-        padding: 10px 0;
+        padding: 1.5rem 0;
         border-bottom: 1px solid #ccc;
     }
 
